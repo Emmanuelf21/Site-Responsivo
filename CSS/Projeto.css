@@ -1,0 +1,361 @@
+
+/* Estilo para desktop */
+
+@media (min-width: 511px){
+    body{
+        font-family: arial;
+        font-size: 18px;
+        background-color: rgba(1, 62, 131, 0.801);
+        margin: 0px;
+        padding: 0px;
+    }
+
+    header{
+        margin: 0px;
+        background-color: rgba(15, 15, 15, 0.911);
+        color: white;
+        width: 100%;
+        align-items: center;
+        height: 160px;
+    }
+
+    .btn-mobile{
+        display: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: conter;
+        padding: 30px 0px 0px 30px;
+        width: 225px;
+    }
+
+    .logo img{
+        width: 80px;
+    }
+
+    .menu{
+        float: right;
+        margin-right: 20px;
+        height: 100px;
+    }
+
+    .menu a{
+        color: white;
+        margin: 5px;
+        height: 50px;
+        padding: 5px;
+    }
+
+    .menu a:hover{
+        background: linear-gradient(rgba(15, 15, 15, 0.911), black 50%);
+        padding: 30px 5px 5px 5px;
+    }
+
+    .container{
+        background-color: white;
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        margin-top: 5%;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .aside-left{
+        float: left;
+        width: 20%;
+        margin-right: 5%;
+        height: 500px;
+        text-align: justify;
+    }
+
+    .container-section{
+        width: 50%;
+        align-items: center;
+        text-align: justify;
+    }
+    
+    .button{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        background-color: green;
+        padding: 7px;
+        border-radius: 5px;
+        border: 1px solid green;
+        box-shadow: 3px 3px 3px rgb(0, 68, 0);
+        width: 100px;
+        height: 80px;
+    }
+
+    .container-section article{
+        margin-top: 10px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid grey;
+    }
+
+    .container-imagem-grande img{
+        width: 100%;
+        height: 100%;
+    }
+    .container-imagem-grande{
+        border: 1px solid rgba(44, 44, 44, 0.719);
+        padding: 0.5%;
+        
+    }
+    .aside-right{
+        float: right;
+        width: 20%;
+        margin-left: 5%;
+        text-align: justify;
+    }
+
+    .lista{
+        width: 100%;
+        margin-left: 0px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .lista li a{
+        border-bottom: 1px solid rgba(44, 44, 44, 0.507);
+        width: 100%;
+    }
+
+    .post div{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .post div img{
+        border: 1px solid rgba(56, 56, 56, 0.651);
+        padding: 1px;
+    }
+
+    .post div a{
+        font-weight: bold;
+
+    }
+    .post p{
+        color: grey;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .final{
+        width: 100%;
+        background-color: rgba(15, 15, 15, 0.911);
+        margin-top: 5% ;
+    }
+    
+    .section-final{
+        width: 80%;
+        padding-left: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article-final{
+        width: 20%;
+        color: white;
+        text-align: justify;
+    }
+
+    .article-final p{
+        border-top: 2px solid white;
+        padding-top: 20px;
+    }
+
+    footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        height: 60px;
+        padding-top: 1px;
+    }
+}
+
+/* Estilo para mobile */
+
+@media (max-width: 510px){
+    body{
+        font-family: arial;
+        font-size: 18px;
+        background-color: rgba(1, 62, 131, 0.801);
+        margin: 0px;
+        width: auto;
+    }
+    
+    header{
+        background-color: rgba(26, 26, 26);
+        color: white;
+        width: 100%;
+        height: 180px;
+    }
+    
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+        width: 210px;
+        height: 80px;
+    }
+    
+    .btn-mobile{
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
+        padding: 0px;
+        cursor: pointer;
+    }
+    
+    .btn-mobile img{
+        width: 30px;
+        height: 30px;
+        margin-left: -2px;
+        margin-top: -2px;
+        cursor: pointer;
+    }
+    .logo img{
+        width: 80px;
+        margin-right: 20px;
+    }
+
+    .menu{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 180px;
+        background-color: rgb(26, 26, 26);
+        padding: 20px 0px 20px 20px;
+        width: 480px;
+        height: calc(100vh - 235px);
+        transition: 1s;
+        z-index: 10000;
+    }
+    
+    .menu a{
+        color: white;
+        border-bottom: 1px solid white;
+    }
+
+    #cabecalho.active .menu{
+        display: flex;
+        overflow-y: hidden;
+    }
+    .documentos, .info, .container-posts, .links img{
+        display: none;
+    }
+
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        background-color: white;
+    }
+    .container-section{
+        width: 100%;
+        align-items: center;
+        text-align: justify;
+        margin-top: 15px;
+    }
+    
+    .container-section article{
+        border: 1px solid rgba(128, 128, 128, 0.74);
+        border-left: none;
+        border-right: none;
+        width: 100%;
+        padding: 5% 0% 10% 0%;
+    }
+    .container-imagem-grande{
+        border: none;
+    }
+
+    .container-imagem-grande img{
+        width: 100%;
+        border: 1px solid rgba(128, 128, 128, 0.74);
+        padding: 5px;
+    }
+    .button{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        background-color: green;
+        padding: 7px;
+        border-radius: 5px;
+        border: 1px solid green;
+        box-shadow: 3px 3px 3px rgb(0, 68, 0);
+        width: 100px;
+        height: 80px;
+    }
+
+    .aside-left{
+        border: 1px solid rgba(128, 128, 128, 0.74);
+        padding-right: 5px;
+        border-left: none;
+        border-top: none;
+        width: 100%;
+        box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.74);
+    }
+
+    .lista{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 200px;
+    }
+    
+    .lista li a{
+        border-bottom: 1px solid rgba(128, 128, 128, 0.74);
+    }
+
+    .final{
+        color: white;
+        background-color: rgba(15, 15, 15, 0.911);
+        padding-top: 5px;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .section-final{
+        margin: 0px 15px 0px 15px;
+    }
+
+    .titulo-secao{
+        border-bottom: 2px solid white;
+        padding-bottom: 5px;
+    }
+
+    footer{
+        background-color: black;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
