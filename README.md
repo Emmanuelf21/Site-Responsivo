@@ -1,2 +1,2 @@
-# Projeto-Faculdade
-Projeto de um site informativo utilizando HTML, CSS e JavaScript
+# Site-Responsivo
+Projeto de um site responsivo informativo utilizando HTML, CSS e JavaScript
